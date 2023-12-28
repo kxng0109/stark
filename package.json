@@ -1,0 +1,19 @@
+{
+  "name": "stark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "concurrently \"npm:compile-typescript\" \"npm:compile-tailwindcss\" \"npm:live-server\"",
+    "compile-typescript": "tsc --watch",
+    "compile-tailwindcss": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
+    "live-server": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*, !.git/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  }
+}
