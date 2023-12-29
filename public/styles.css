@@ -577,3 +577,45 @@ video {
     max-width: 1536px;
   }
 }
+
+@font-face {
+  font-family: ArminGroteskBlack;
+
+  src: url("./assets/fonts/ArminGroteskBlack.otf");
+
+  font-weight: 900;
+}
+
+body#container {
+  /*	@apply px-4*/
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 235 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+#header-logo {
+  fill: red !important;
+}
+
+#header-button {
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 31 209 / var(--tw-bg-opacity));
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  font-family: ArminGroteskBlack;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.1em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}

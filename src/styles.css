@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+	font-family: ArminGroteskBlack;
+	src: url("./assets/fonts/ArminGroteskBlack.otf");
+	font-weight: 900;
+}
+
+body#container {
+	/*	@apply px-4*/
+}
+
+#navbar {
+	@apply flex flex-row justify-between items-center p-4 bg-yellow-white;
+}
+
+#header-logo {
+	fill: red !important;
+}
+
+#header-button {
+	@apply bg-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md;
+}
