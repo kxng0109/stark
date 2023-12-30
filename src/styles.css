@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 *, *:after, *:before{
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+	@apply box-border p-0 m-0 font-[ArminGroteskRegular] text-dark-blue;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 @font-face {
 	font-family: ArminGroteskBlack;
@@ -30,20 +26,17 @@
 
 @font-face {
 	font-family: RobotoMonoBold;
-	src: url("./assets/fonts/RobotoMonoBold.otf");
+	src: url("./assets/fonts/RobotoMonoBold.ttf");
 	font-weight: 700;
 }
 
-body#container {
-	/*	@apply px-4*/
-}
 
 #navbar {
 	@apply flex flex-row justify-between items-center p-4 bg-yellow-white;
 }
 
 #header-logo {
-	@apply fill-blue;
+	@apply fill-blue hover:fill-lighter-hover-blue;
 }
 
 #header-menu-icon {
@@ -51,24 +44,25 @@ body#container {
 }
 
 #header-button {
-	@apply bg-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md mr-6;
+	@apply bg-blue  hover:bg-lighter-hover-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md mr-6;
 }
 
 header>section {
-	@apply px-4 font-[ArminGroteskSemiBold] text-grey flex justify-between my-6;
+	@apply px-4 flex justify-between my-6;
 }
 
 header>section>a {
-	@apply hover:text-hover-blue;
+	@apply  text-grey hover:text-lighter-hover-blue font-[ArminGroteskSemiBold];
 }
 
 #header-search{
-	@apply outline outline-2 outline-gray-400 focus:outline-hover-blue py-3 rounded-md w-[13.5rem];
+	@apply outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[13.5rem];
 }
 
 #heaeder-search-icon{
 	@apply text-xl absolute left-3 top-[1.25rem] text-gray-400 pointer-events-none;
 }
+
 
 
 #main{
@@ -79,10 +73,96 @@ header>section>a {
 	@apply py-8
 }
 
-div.section-header>div>h2{
-	@apply font-[ArminGroteskBlack] text-5xl leading-[53px];
+.section-header-heading{
+	@apply font-[ArminGroteskBlack] text-5xl leading-[53px] text-dark-blue;
 }
 
-div.section-header>div>a{
-	@apply text-blue hover:text-hover-blue underline uppercase;
+.section-header-view{
+	@apply text-blue hover:text-hover-blue underline uppercase text-nowrap font-[RobotoMonoBold] tracking-wider;
 }
+
+.section-header-subheading{
+	@apply text-dark-blue text-xl;
+}
+
+
+#fs-cards-container{
+	grid-template-rows: repeat(6, 218px);
+	@apply grid gap-y-8;
+}
+
+.fs-cards{
+	@apply border border-gray-200 hover:border-gray-400 rounded-md p-6;
+}
+
+.fs-card-image{
+	@apply w-10 border rounded-md;
+}
+
+.fs-card-type{
+	@apply font-[RobotoMonoBold] uppercase tracking-wider text-blue pt-3 pb-1;
+}
+
+.fs-card-title, .ss-card-title{
+	@apply text-2xl font-[ArminGroteskBlack] z-10 relative;
+}
+
+
+
+#ss-cards-container{
+	grid-template-rows: repeat(3, 350px);
+	@apply grid gap-y-8;
+}
+
+.ss-cards{
+	@apply relative w-[260px] p-9 rounded-md;
+}
+
+.ss-card-image{
+	@apply absolute inset-x-0 bottom-0 z-0;
+}
+
+
+
+#footer{
+	@apply px-6 bg-dark-blue mt-40;
+}
+
+#top-footer{
+	grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
+	@apply grid justify-between gap-10 pt-20 pb-12;
+}
+
+.tf-divs{
+	@apply flex flex-col;
+}
+
+.tf-divs>*{
+	@apply my-1.5
+}
+
+.tf-divs-heading{
+	@apply font-[ArminGroteskBlack] uppercase text-sm tracking-wider  text-white;
+}
+
+.tf-divs>a{
+	@apply font-[ArminGroteskSemiBold] hover:underline  text-white;
+}
+
+
+#bottom-footer{
+	@apply flex justify-between  py-20 flex-wrap;
+}
+
+#bf-logos-container{
+	@apply flex mb-8 w-64;
+}
+
+.bf-logos{
+	@apply w-8 mr-3;
+}
+
+
+#copyright{
+	@apply text-gold font-[RobotoMonoBold] tracking-wider;
+} 
