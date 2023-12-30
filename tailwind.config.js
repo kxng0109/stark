@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   relative: true,
   content: ["./public/index.html", "./src/**/*.ts"],
@@ -10,6 +11,10 @@ module.exports = {
         'blue': '#381fd1',
         'hover-blue': '#4b34d4',
         'dark-blue': '#10284b',
+        'grey': '#4b4b4e'
+      },
+      fontFamily: {
+        'mono' : ["Roboto Mono", ...defaultTheme.fontFamily.mono],
       }
     },
   },

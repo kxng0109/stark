@@ -2,10 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+*, *:after, *:before{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 @font-face {
 	font-family: ArminGroteskBlack;
 	src: url("./assets/fonts/ArminGroteskBlack.otf");
 	font-weight: 900;
+}
+
+@font-face {
+	font-family: ArminGroteskSemiBold;
+	src: url("./assets/fonts/ArminGroteskSemiBold.otf");
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: ArminGroteskRegular;
+	src: url("./assets/fonts/ArminGroteskRegular.otf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: RobotoMonoBold;
+	src: url("./assets/fonts/RobotoMonoBold.otf");
+	font-weight: 700;
 }
 
 body#container {
@@ -17,9 +43,46 @@ body#container {
 }
 
 #header-logo {
-	fill: red !important;
+	@apply fill-blue;
+}
+
+#header-menu-icon {
+	@apply text-2xl text-blue;
 }
 
 #header-button {
-	@apply bg-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md;
+	@apply bg-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md mr-6;
+}
+
+header>section {
+	@apply px-4 font-[ArminGroteskSemiBold] text-grey flex justify-between my-6;
+}
+
+header>section>a {
+	@apply hover:text-hover-blue;
+}
+
+#header-search{
+	@apply outline outline-2 outline-gray-400 focus:outline-hover-blue py-3 rounded-md w-[13.5rem];
+}
+
+#heaeder-search-icon{
+	@apply text-xl absolute left-3 top-[1.25rem] text-gray-400 pointer-events-none;
+}
+
+
+#main{
+	@apply px-4;
+}
+
+#first-section{
+	@apply py-8
+}
+
+div.section-header>div>h2{
+	@apply font-[ArminGroteskBlack] text-5xl leading-[53px];
+}
+
+div.section-header>div>a{
+	@apply text-blue hover:text-hover-blue underline uppercase;
 }
