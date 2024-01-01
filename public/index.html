@@ -29,18 +29,44 @@
 			<!-- <label for="#header-search"></label> -->
 			<a href="#" class="text-blue">Library</a>
 			<a href="#" class="mr-[-40px]">Collections</a>
-			<a href="#" class="flex items-center">
+			<a href="#" class="flex items-center" id="categories">
 				Categories
-				<ion-icon name="chevron-down" class="pl-5"></ion-icon>
+				<ion-icon name="chevron-down" id="down-icon" class="pl-5"></ion-icon>
+				<ion-icon name="chevron-up" id="up-icon" class="pl-5 hidden"></ion-icon>
 			</a>
 		</section>
-		<div class="relative mx-4 pt-1.5 pb-[0.7rem] border-b border-b-gray-200">
+		<div id="search-container">
 			<input type="search" name="header-search" id="header-search">
 			<ion-icon name="search" id="heaeder-search-icon"></ion-icon>
 			<!-- configure it in javascript to show hover-blue when the input is in focus -->
 		</div>
-	</header>
 
+		<div id="categories--extension">
+			<a href="#">All</a>
+			<a href="#">Blogs & Articles</a>
+			<a href="#">Books</a>
+			<a href="#">Checklists</a>
+			<a href="#">Colors</a>
+			<a href="#">Community</a>
+			<a href="#">Companies & Organizations</a>
+			<a href="#">Course & Certificates</a>
+			<a href="#">Design Patterns</a>
+			<a href="#">Design Systems</a>
+			<a href="#">Emails</a>
+			<a href="#">Employment</a>
+			<a href="#">Gaming</a>
+			<a href="#">Guides</a>
+			<a href="#">Media</a>
+			<a href="#">Mobile</a>
+			<a href="#">Newsletters</a>
+			<a href="#">Plugins</a>
+			<a href="#">Podcasts & VIdeos</a>
+			<a href="#">Resources</a>
+			<a href="#">Software & Tools</a>
+			<a href="#">Web Standards</a>
+		</div>
+	</header>
+	
 	<main id="main">
 		<section id="first-section">
 			<div class="section-header">

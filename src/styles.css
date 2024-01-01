@@ -31,8 +31,12 @@
 }
 
 
+header>section, header>div{
+	@apply mx-4;
+}
+
 #navbar {
-	@apply flex flex-row justify-between items-center p-4 bg-yellow-white;
+	@apply px-4 flex flex-row justify-between items-center py-4 bg-yellow-white;
 }
 
 #header-logo {
@@ -48,21 +52,28 @@
 }
 
 header>section {
-	@apply px-4 flex justify-between my-6;
+	@apply flex justify-between my-6;
 }
 
-header>section>a {
+header>section>a, header>div#categories--extension>a{
 	@apply  text-grey hover:text-lighter-hover-blue font-[ArminGroteskSemiBold];
 }
 
+#search-container{
+	@apply relative pt-1.5 pb-[0.7rem] border-b border-b-gray-200
+}
+
 #header-search{
-	@apply outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[13.5rem];
+	@apply outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[56.8vw] /*w-[13.5rem]*/;
 }
 
 #heaeder-search-icon{
 	@apply text-xl absolute left-3 top-[1.25rem] text-gray-400 pointer-events-none;
 }
 
+#categories--extension{
+	@apply hidden mx-4 p-4 grid grid-cols-[repeat(2,_minmax(100px,_1fr))] justify-between gap-4 rounded-md bg-not-too-far-from-white mb-7;
+}
 
 
 #main{
@@ -82,7 +93,7 @@ header>section>a {
 }
 
 .section-header-subheading{
-	@apply text-dark-blue text-xl;
+	@apply text-dark-blue text-xl my-2 mb-7;
 }
 
 
@@ -110,12 +121,11 @@ header>section>a {
 
 
 #ss-cards-container{
-	grid-template-rows: repeat(3, 350px);
-	@apply grid gap-y-8;
+	@apply grid gap-y-8 grid-cols-[repeat(auto-fill,_269px)] gap-x-8;
 }
 
 .ss-cards{
-	@apply relative w-[260px] p-9 rounded-md;
+	@apply relative w-[260px] h-[350px] p-9 rounded-md;
 }
 
 .ss-card-image{
