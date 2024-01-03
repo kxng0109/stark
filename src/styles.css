@@ -51,11 +51,12 @@ header>section, header>div{
 	@apply bg-blue  hover:bg-lighter-hover-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md mr-6;
 }
 
+
 #below-header{
-	@apply flex justify-between flex-wrap hidden;
+	@apply flex justify-between flex-wrap md:hidden;
 }
 
-#below-header>a, #categories--extension>a, aside>a{
+#below-header>a, .categories--extension>a, aside>a{
 	@apply  text-grey hover:text-lighter-hover-blue font-[ArminGroteskSemiBold];
 }
 
@@ -75,37 +76,67 @@ header>section, header>div{
 	@apply text-xl absolute left-3 top-[1.25rem] text-gray-400 pointer-events-none;
 }
 
-#categories--extension{
-	@apply hidden mx-4 p-4 grid grid-cols-[repeat(2,_minmax(100px,_1fr))] justify-between gap-4 rounded-md bg-not-too-far-from-white mb-7;
+.up-icon{
+	@apply hidden;
 }
+
+.categories--extension{
+	@apply hidden mx-4 p-4 grid-cols-[repeat(2,_minmax(100px,_1fr))] justify-between gap-4 rounded-md bg-not-too-far-from-white mb-7;
+}
+
+
+
 
 
 #content-container{
-	@apply px-4 gap-x-16 md:flex md:px-6 md:mt-[3.7rem];
+	@apply px-4 gap-x-16 md:flex md:px-6 md:mt-16;
 }
 
-aside{
-	@apply min-w-[17rem] w-[17rem] flex flex-col gap-y-8;
+#aside{
+	@apply hidden md:flex min-w-[17rem] w-[17rem] md:flex-col gap-y-[2.1rem];
 }
 
-aside .search{
-	@apply w-full
+#aside .search-container{
+	@apply border-none pb-0;
+}
+
+#aside .search{
+	@apply w-full py-[0.7rem];
+}
+
+#aside>a{
+	@apply mx-5;
 }
 
 #aside-search-icon{
-	@apply top-[2.75rem];
+	@apply top-[2.7rem];
 }
 
-aside .search-container{
-	@apply border-none pb-0
+#aside-categories--extension{
+	@apply hidden flex flex-col bg-transparent gap-y-[2.2rem] ml-8 mr-0 mb-0 pb-0;
 }
+
+
+#contribute{
+	@apply mt-2 p-6 rounded-md bg-light-purple;
+}
+
+#contribute>#contribute-subheading{
+	@apply text-base text-[0.94rem];
+}
+
+#contribute-button{
+	@apply rounded-md bg-blue text-white px-[2.75rem] py-[0.6rem] inline-block;
+}
+
+
 
 /*#main{
 	@apply w-auto
 }*/
 
 #first-section{
-	@apply py-8
+	@apply py-8 md:pt-0;
 }
 
 .section-header-heading{
@@ -116,14 +147,14 @@ aside .search-container{
 	@apply text-blue hover:text-hover-blue underline uppercase text-nowrap font-[RobotoMonoBold] tracking-wider;
 }
 
-.section-header-subheading{
+.section-header-subheading, #contribute-subheading{
 	@apply text-dark-blue text-xl my-2 mb-7;
 }
 
 
 #fs-cards-container{
 	grid-template-rows: repeat(6, 218px);
-	@apply grid gap-y-8 xs:grid-rows-[repeat(6,_190px)];
+	@apply grid gap-y-8 xs:grid-rows-[repeat(6,_190px)] md:grid-cols-[repeat(auto-fill,_269px)];
 }
 
 .fs-cards{
@@ -138,7 +169,7 @@ aside .search-container{
 	@apply font-[RobotoMonoBold] uppercase tracking-wider text-blue pt-3 pb-1;
 }
 
-.fs-card-title, .ss-card-title{
+.fs-card-title, .ss-card-title, #contribute-heading{
 	@apply text-2xl font-[ArminGroteskBlack] z-10 relative;
 }
 

@@ -41,7 +41,7 @@
 			</div>
 		</section>
 
-		<div id="categories--extension">
+		<div class="categories--extension" id="header-categories--extension">
 			<a href="#">All</a>
 			<a href="#">Blogs & Articles</a>
 			<a href="#">Books</a>
@@ -70,25 +70,50 @@
 
 
 	<div id="content-container">
-		<aside>
+		<aside id="aside">
 			<div class="search-container">
-				<label for="aside-search">Search Library</label>
+				<label for="aside-search" class="text-gray-500 font-[ArminGroteskRegular] tracking-wide">Search Library</label>
 				<input type="search" name="aside-search" id="aside-search" class="search">
 				<ion-icon name="search" id="aside-search-icon" class="search-icon"></ion-icon>
 				<!-- configure it in javascript to show hover-blue when the input is in focus -->
 			</div>
 			<a href="#" class="text-blue">Home</a>
 			<a href="#" class="">Collections</a>
-			<a href="#" class="flex items-center" id="categories">
+			<a href="#" class="flex items-center justify-between" id="categories">
 				Categories
 				<ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
-				<ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
+				<ion-icon name="chevron-up" class="up-icon" class="pl-5"></ion-icon>
 			</a>
 
-			<div>
-				<h2>Contribute to Stark</h2>
-				<h3>Got any accessibility resources or news?</h3>
-				<a href="#">Submit a Resource</a>
+			<div class="categories--extension" id="aside-categories--extension">
+				<a href="#">All</a>
+				<a href="#">Blogs & Articles</a>
+				<a href="#">Books</a>
+				<a href="#">Checklists</a>
+				<a href="#">Colors</a>
+				<a href="#">Community</a>
+				<a href="#">Companies & Organizations</a>
+				<a href="#">Course & Certificates</a>
+				<a href="#">Design Patterns</a>
+				<a href="#">Design Systems</a>
+				<a href="#">Emails</a>
+				<a href="#">Employment</a>
+				<a href="#">Gaming</a>
+				<a href="#">Guides</a>
+				<a href="#">Media</a>
+				<a href="#">Mobile</a>
+				<a href="#">Newsletters</a>
+				<a href="#">Plugins</a>
+				<a href="#">Podcasts & VIdeos</a>
+				<a href="#">Resources</a>
+				<a href="#">Software & Tools</a>
+				<a href="#">Web Standards</a>
+			</div>
+
+			<div id="contribute">
+				<h2 id="contribute-heading">Contribute to Stark</h2>
+				<h3 id="contribute-subheading">Got any accessibility resources or news?</h3>
+				<a href="#" id="contribute-button">Submit a Resource</a>
 			</div>
 		</aside>
 
