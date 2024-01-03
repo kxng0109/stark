@@ -93,7 +93,7 @@ aside .search{
 }
 
 #aside-search-icon{
-	@apply 
+	@apply top-[2.75rem];
 }
 
 aside .search-container{

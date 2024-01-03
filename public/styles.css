@@ -841,6 +841,10 @@ aside .search {
   width: 100%;
 }
 
+#aside-search-icon {
+  top: 2.75rem;
+}
+
 aside .search-container {
   border-style: none;
   padding-bottom: 0px;
