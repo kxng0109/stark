@@ -25,21 +25,21 @@
 			</div>
 		</navbar>
 
-		<section>
+		<section id="below-header">
 			<!-- <label for="#header-search"></label> -->
 			<a href="#" class="text-blue">Library</a>
 			<a href="#" class="mr-[-40px]">Collections</a>
 			<a href="#" class="flex items-center" id="categories">
 				Categories
-				<ion-icon name="chevron-down" id="down-icon" class="pl-5"></ion-icon>
-				<ion-icon name="chevron-up" id="up-icon" class="pl-5 hidden"></ion-icon>
+				<ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
+				<ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
 			</a>
+			<div class="search-container">
+				<input type="search" name="header-search" class="search">
+				<ion-icon name="search" id="heaeder-search-icon" class="search-icon"></ion-icon>
+				<!-- configure it in javascript to show hover-blue when the input is in focus -->
+			</div>
 		</section>
-		<div id="search-container">
-			<input type="search" name="header-search" id="header-search">
-			<ion-icon name="search" id="heaeder-search-icon"></ion-icon>
-			<!-- configure it in javascript to show hover-blue when the input is in focus -->
-		</div>
 
 		<div id="categories--extension">
 			<a href="#">All</a>
@@ -66,77 +66,103 @@
 			<a href="#">Web Standards</a>
 		</div>
 	</header>
-	
-	<main id="main">
-		<section id="first-section">
-			<div class="section-header">
-				<div class="flex items-center justify-between">
-					<h2 class="section-header-heading">New in the Library</h2>
-					<a href="#" class="section-header-view">View all</a>
-				</div>
-				<h3 class="section-header-subheading">Newly added accessibility resources, guides, and more.</h3>
+
+
+
+	<div id="content-container">
+		<aside>
+			<div class="search-container">
+				<label for="aside-search">Search Library</label>
+				<input type="search" name="aside-search" id="aside-search" class="search">
+				<ion-icon name="search" id="aside-search-icon" class="search-icon"></ion-icon>
+				<!-- configure it in javascript to show hover-blue when the input is in focus -->
 			</div>
+			<a href="#" class="text-blue">Home</a>
+			<a href="#" class="">Collections</a>
+			<a href="#" class="flex items-center" id="categories">
+				Categories
+				<ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
+				<ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
+			</a>
 
-			<container id="fs-cards-container">
-				<a class="fs-cards" id="fs-card-1" href="#">
-					<img src="./assets/images/logo/h-logo.jpg" alt="" class="fs-card-image">
-					<p class="fs-card-type">Resources</p>
-					<h2 class="fs-card-title">Making Accessible Books</h2>
-				</a>
-				<a href="#" class="fs-cards" id="fs-card-2">
-					<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
-					<p class="fs-card-type">Resources</p>
-					<h2 class="fs-card-title">Inclusive Publishing</h2>
-				</a>
-				<a href="#" class="fs-cards" id="fs-card-3">
-					<img src="./assets/images/logo/APLN.png" alt="" class="fs-card-image">
-					<p class="fs-card-type">Resources</p>
-					<h2 class="fs-card-title">The APLN (Accessible Publishing Learning Network)</h2>
-				</a>
-				<a href="#" class="fs-cards" id="fs-card-4">
-					<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
-					<p class="fs-card-type">Resources</p>
-					<h2 class="fs-card-title">The DAISY Consortium’s Accessible Publishing Knowledge Base</h2>
-				</a>
-				<a href="#" class="fs-cards" id="fs-card-5">
-					<img src="./assets/images/logo/language_please.png" alt="" class="fs-card-image">
-					<p class="fs-card-type">Resources</p>
-					<h2 class="fs-card-title">Language, Please: Style Guide & Resources for journalists and storytellers
-					</h2>
-				</a>
-				<a href="#" class="fs-cards" id="fs-card-6">
-					<img src="./assets/images/logo/google.png" alt="" class="fs-card-image">
-					<p class="fs-card-type">Blogs & Articles</p>
-					<h2 class="fs-card-title">4 steps to more inclusive, precise language</h2>
-				</a>
-			</container>
-		</section>
-
-		<section id="second-section">
-			<div class="section-header">
-				<div class="flex items-center justify-between">
-					<h2 class="section-header-heading my-2">Featured Collections</h2>
-					<a href="#" class="section-header-view">View all</a>
-				</div>
-				<h3 class="section-header-subheading mb-8">Handpicked and curated collections around accessibility.</h3>
+			<div>
+				<h2>Contribute to Stark</h2>
+				<h3>Got any accessibility resources or news?</h3>
+				<a href="#">Submit a Resource</a>
 			</div>
+		</aside>
 
-			<container id="ss-cards-container">
-				<a href="#" class="ss-cards bg-yellow-white" id="ss-card-1">
-					<h2 class="ss-card-title">Disability Employment</h2>
-					<img src="./assets/images/ssc1.png" alt="" class="ss-card-image">
-				</a>
-				<a href="#" class="ss-cards bg-light-purple" id="ss-card-2">
-					<h2 class="ss-card-title">Making Accesible Color Combos</h2>
-					<img src="./assets/images/ssc2.png" alt="" class="ss-card-image">
-				</a>
-				<a href="#" class="ss-cards bg-yellow-white" id="ss-card-3">
-					<h2 class="ss-card-title">Tips and Tricks for Inclusive Social Media</h2>
-					<img src="./assets/images/ssc3.png" alt="" class="ss-card-image">
-				</a>
-			</container>
-		</section>
-	</main>
+		<main id="main">
+			<section id="first-section">
+				<div class="section-header">
+					<div class="flex items-center justify-between">
+						<h2 class="section-header-heading">New in the Library</h2>
+						<a href="#" class="section-header-view">View all</a>
+					</div>
+					<h3 class="section-header-subheading">Newly added accessibility resources, guides, and more.</h3>
+				</div>
+
+				<container id="fs-cards-container">
+					<a class="fs-cards" id="fs-card-1" href="#">
+						<img src="./assets/images/logo/h-logo.jpg" alt="" class="fs-card-image">
+						<p class="fs-card-type">Resources</p>
+						<h2 class="fs-card-title">Making Accessible Books</h2>
+					</a>
+					<a href="#" class="fs-cards" id="fs-card-2">
+						<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
+						<p class="fs-card-type">Resources</p>
+						<h2 class="fs-card-title">Inclusive Publishing</h2>
+					</a>
+					<a href="#" class="fs-cards" id="fs-card-3">
+						<img src="./assets/images/logo/APLN.png" alt="" class="fs-card-image">
+						<p class="fs-card-type">Resources</p>
+						<h2 class="fs-card-title">The APLN (Accessible Publishing Learning Network)</h2>
+					</a>
+					<a href="#" class="fs-cards" id="fs-card-4">
+						<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
+						<p class="fs-card-type">Resources</p>
+						<h2 class="fs-card-title">The DAISY Consortium’s Accessible Publishing Knowledge Base</h2>
+					</a>
+					<a href="#" class="fs-cards" id="fs-card-5">
+						<img src="./assets/images/logo/language_please.png" alt="" class="fs-card-image">
+						<p class="fs-card-type">Resources</p>
+						<h2 class="fs-card-title">Language, Please: Style Guide & Resources for journalists and storytellers
+						</h2>
+					</a>
+					<a href="#" class="fs-cards" id="fs-card-6">
+						<img src="./assets/images/logo/google.png" alt="" class="fs-card-image">
+						<p class="fs-card-type">Blogs & Articles</p>
+						<h2 class="fs-card-title">4 steps to more inclusive, precise language</h2>
+					</a>
+				</container>
+			</section>
+
+			<section id="second-section">
+				<div class="section-header">
+					<div class="flex items-center justify-between">
+						<h2 class="section-header-heading my-2">Featured Collections</h2>
+						<a href="#" class="section-header-view">View all</a>
+					</div>
+					<h3 class="section-header-subheading mb-8">Handpicked and curated collections around accessibility.</h3>
+				</div>
+
+				<container id="ss-cards-container">
+					<a href="#" class="ss-cards bg-yellow-white" id="ss-card-1">
+						<h2 class="ss-card-title">Disability Employment</h2>
+						<img src="./assets/images/ssc1.png" alt="" class="ss-card-image">
+					</a>
+					<a href="#" class="ss-cards bg-light-purple" id="ss-card-2">
+						<h2 class="ss-card-title">Making Accesible Color Combos</h2>
+						<img src="./assets/images/ssc2.png" alt="" class="ss-card-image">
+					</a>
+					<a href="#" class="ss-cards bg-yellow-white" id="ss-card-3">
+						<h2 class="ss-card-title">Tips and Tricks for Inclusive Social Media</h2>
+						<img src="./assets/images/ssc3.png" alt="" class="ss-card-image">
+					</a>
+				</container>
+			</section>
+		</main>
+	</div>
 
 	<footer id="footer">
 		<container id="top-footer">

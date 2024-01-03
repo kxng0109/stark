@@ -51,23 +51,27 @@ header>section, header>div{
 	@apply bg-blue  hover:bg-lighter-hover-blue text-white text-sm tracking-widest font-[ArminGroteskBlack] px-3.5 py-1.5 rounded-md mr-6;
 }
 
-header>section {
-	@apply flex justify-between my-6;
+#below-header{
+	@apply flex justify-between flex-wrap hidden;
 }
 
-header>section>a, header>div#categories--extension>a{
+#below-header>a, #categories--extension>a, aside>a{
 	@apply  text-grey hover:text-lighter-hover-blue font-[ArminGroteskSemiBold];
 }
 
-#search-container{
-	@apply relative pt-1.5 pb-[0.7rem] border-b border-b-gray-200
+#below-header>a{
+	@apply my-6 xs:mb-10;
 }
 
-#header-search{
+.search-container{
+	@apply relative pt-1.5 pb-[0.7rem] border-b border-b-gray-200 flex-[1_1_100%] md:flex-initial;
+}
+
+.search{
 	@apply outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[56.8vw] /*w-[13.5rem]*/;
 }
 
-#heaeder-search-icon{
+.search-icon{
 	@apply text-xl absolute left-3 top-[1.25rem] text-gray-400 pointer-events-none;
 }
 
@@ -76,9 +80,29 @@ header>section>a, header>div#categories--extension>a{
 }
 
 
-#main{
-	@apply px-4;
+#content-container{
+	@apply px-4 gap-x-16 md:flex md:px-6 md:mt-[3.7rem];
 }
+
+aside{
+	@apply min-w-[17rem] w-[17rem] flex flex-col gap-y-8;
+}
+
+aside .search{
+	@apply w-full
+}
+
+#aside-search-icon{
+	@apply 
+}
+
+aside .search-container{
+	@apply border-none pb-0
+}
+
+/*#main{
+	@apply w-auto
+}*/
 
 #first-section{
 	@apply py-8
@@ -99,7 +123,7 @@ header>section>a, header>div#categories--extension>a{
 
 #fs-cards-container{
 	grid-template-rows: repeat(6, 218px);
-	@apply grid gap-y-8;
+	@apply grid gap-y-8 xs:grid-rows-[repeat(6,_190px)];
 }
 
 .fs-cards{
@@ -161,7 +185,7 @@ header>section>a, header>div#categories--extension>a{
 
 
 #bottom-footer{
-	@apply flex justify-between  py-20 flex-wrap;
+	@apply flex justify-between  py-20 flex-wrap xs:pt-9;
 }
 
 #bf-logos-container{
