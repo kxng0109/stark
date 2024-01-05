@@ -2,281 +2,297 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="./styles.css">
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
-	<title>Library: Accessibility resources, guides, communities, and more</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    <title>Library: Accessibility resources, guides, communities, and more</title>
 </head>
 
 <body id="container">
-	<header>
-		<navbar id="navbar">
-			<div class="flex items-center gap-x-6">
-				<svg width="32" height="32" viewBox="0 0 32 32" fill="inherit" xmlns="http://www.w3.org/2000/svg"
-					aria-label="Home" id="navbar-logo">
-					<path fill-rule="evenodd" clip-rule="evenodd"
-						d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z"
-						fill="inherit"></path>
-				</svg>
-				<div class="hidden md+:flex justify-between gap-x-6">
-					<a href="#" class="navbar-links">
-						Product
-						<ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
-					</a>
-					<a href="#" class="navbar-links">Pricing</a>
-					<a href="#" class="navbar-links">Support</a>
-					<a href="#" class="navbar-links">
-						Resources
-						<ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
-					</a>
-				</div>
-			</div>
-			<div class="flex items-center gap-x-7">
-				<a href="#" class="navbar-links">Log in</a>
-				<button id="navbar-button">START FREE TRIAL</button>
-				<ion-icon name="menu" id="navbar-menu-icon"></ion-icon>
-			</div>
-		</navbar>
-
-		<div id="products-on-hover">
-			<a href="#" class="ugh">Stark Web App</a>
-			<a href="#" class="ugh">Stark for Adobe XD</a>
-			<a href="#" class="ugh">Stark for Safari</a>
-			<a href="#" class="ugh">Stark for Figma</a>
-			<a href="#" class="ugh">Stark for Chrome</a>
-			<a href="#" class="ugh">Stark for Arc</a>
-			<a href="#" class="ugh">Stark for FigJam</a>
-			<a href="#" class="ugh">Stark for Firefox</a>
-			<a href="#" class="ugh">Stark for Brave</a>
-			<a href="#" class="ugh">Stark for Sketch</a>
-			<a href="#" class="ugh">Stark for Edge</a>
-		</div>
-
-		<section id="below-navbar">
-			<!-- <label for="#header-search"></label> -->
-			<a href="#" class="text-blue">Library</a>
-			<a href="#" class="mr-[-40px]">Collections</a>
-			<a href="#" class="flex items-center" id="categories">
-				Categories
-				<ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
-				<ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
-			</a>
-			<div class="search-container">
-				<input type="search" name="header-search" class="search">
-				<ion-icon name="search" id="heaeder-search-icon" class="search-icon"></ion-icon>
-				<!-- configure it in javascript to show hover-blue when the input is in focus -->
-			</div>
-		</section>
-
-		<div class="categories--extension" id="header-categories--extension">
-			<a href="#">All</a>
-			<a href="#">Blogs & Articles</a>
-			<a href="#">Books</a>
-			<a href="#">Checklists</a>
-			<a href="#">Colors</a>
-			<a href="#">Community</a>
-			<a href="#">Companies & Organizations</a>
-			<a href="#">Course & Certificates</a>
-			<a href="#">Design Patterns</a>
-			<a href="#">Design Systems</a>
-			<a href="#">Emails</a>
-			<a href="#">Employment</a>
-			<a href="#">Gaming</a>
-			<a href="#">Guides</a>
-			<a href="#">Media</a>
-			<a href="#">Mobile</a>
-			<a href="#">Newsletters</a>
-			<a href="#">Plugins</a>
-			<a href="#">Podcasts & VIdeos</a>
-			<a href="#">Resources</a>
-			<a href="#">Software & Tools</a>
-			<a href="#">Web Standards</a>
-		</div>
-	</header>
-
-
-
-	<div id="content-container">
-		<aside id="aside">
-			<div class="search-container">
-				<label for="aside-search" class="text-gray-500 font-[ArminGroteskRegular] tracking-wide">Search Library</label>
-				<input type="search" name="aside-search" id="aside-search" class="search">
-				<ion-icon name="search" id="aside-search-icon" class="search-icon"></ion-icon>
-				<!-- configure it in javascript to show hover-blue when the input is in focus -->
-			</div>
-			<a href="#" class="text-blue">Home</a>
-			<a href="#" class="">Collections</a>
-			<a href="#" class="flex items-center justify-between" id="categories">
-				Categories
-				<ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
-				<ion-icon name="chevron-up" class="up-icon" class="pl-5"></ion-icon>
-			</a>
-
-			<div class="categories--extension" id="aside-categories--extension">
-				<a href="#">All</a>
-				<a href="#">Blogs & Articles</a>
-				<a href="#">Books</a>
-				<a href="#">Checklists</a>
-				<a href="#">Colors</a>
-				<a href="#">Community</a>
-				<a href="#">Companies & Organizations</a>
-				<a href="#">Course & Certificates</a>
-				<a href="#">Design Patterns</a>
-				<a href="#">Design Systems</a>
-				<a href="#">Emails</a>
-				<a href="#">Employment</a>
-				<a href="#">Gaming</a>
-				<a href="#">Guides</a>
-				<a href="#">Media</a>
-				<a href="#">Mobile</a>
-				<a href="#">Newsletters</a>
-				<a href="#">Plugins</a>
-				<a href="#">Podcasts & VIdeos</a>
-				<a href="#">Resources</a>
-				<a href="#">Software & Tools</a>
-				<a href="#">Web Standards</a>
-			</div>
-
-			<div id="contribute">
-				<h2 id="contribute-heading">Contribute to Stark</h2>
-				<h3 id="contribute-subheading">Got any accessibility resources or news?</h3>
-				<a href="#" id="contribute-button">Submit a Resource</a>
-			</div>
-		</aside>
-
-		<main id="main">
-			<section id="first-section">
-				<div class="section-header">
-					<div class="flex items-center justify-between">
-						<h2 class="section-header-heading">New in the Library</h2>
-						<a href="#" class="section-header-view">View all</a>
-					</div>
-					<h3 class="section-header-subheading">Newly added accessibility resources, guides, and more.</h3>
-				</div>
-
-				<container id="fs-cards-container">
-					<a class="fs-cards" id="fs-card-1" href="#">
-						<img src="./assets/images/logo/h-logo.jpg" alt="" class="fs-card-image">
-						<p class="fs-card-type">Resources</p>
-						<h2 class="fs-card-title">Making Accessible Books</h2>
-					</a>
-					<a href="#" class="fs-cards" id="fs-card-2">
-						<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
-						<p class="fs-card-type">Resources</p>
-						<h2 class="fs-card-title">Inclusive Publishing</h2>
-					</a>
-					<a href="#" class="fs-cards" id="fs-card-3">
-						<img src="./assets/images/logo/APLN.png" alt="" class="fs-card-image">
-						<p class="fs-card-type">Resources</p>
-						<h2 class="fs-card-title">The APLN (Accessible Publishing Learning Network)</h2>
-					</a>
-					<a href="#" class="fs-cards" id="fs-card-4">
-						<img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
-						<p class="fs-card-type">Resources</p>
-						<h2 class="fs-card-title">The DAISY Consortium’s Accessible Publishing Knowledge Base</h2>
-					</a>
-					<a href="#" class="fs-cards" id="fs-card-5">
-						<img src="./assets/images/logo/language_please.png" alt="" class="fs-card-image">
-						<p class="fs-card-type">Resources</p>
-						<h2 class="fs-card-title">Language, Please: Style Guide & Resources for journalists and storytellers
-						</h2>
-					</a>
-					<a href="#" class="fs-cards" id="fs-card-6">
-						<img src="./assets/images/logo/google.png" alt="" class="fs-card-image">
-						<p class="fs-card-type">Blogs & Articles</p>
-						<h2 class="fs-card-title">4 steps to more inclusive, precise language</h2>
-					</a>
-				</container>
-			</section>
-
-			<section id="second-section">
-				<div class="section-header">
-					<div class="flex items-center justify-between">
-						<h2 class="section-header-heading my-2">Featured Collections</h2>
-						<a href="#" class="section-header-view">View all</a>
-					</div>
-					<h3 class="section-header-subheading mb-8">Handpicked and curated collections around accessibility.</h3>
-				</div>
-
-				<container id="ss-cards-container">
-					<a href="#" class="ss-cards bg-yellow-white" id="ss-card-1">
-						<h2 class="ss-card-title">Disability Employment</h2>
-						<img src="./assets/images/ssc1.png" alt="" class="ss-card-image">
-					</a>
-					<a href="#" class="ss-cards bg-light-purple" id="ss-card-2">
-						<h2 class="ss-card-title">Making Accesible Color Combos</h2>
-						<img src="./assets/images/ssc2.png" alt="" class="ss-card-image">
-					</a>
-					<a href="#" class="ss-cards bg-yellow-white" id="ss-card-3">
-						<h2 class="ss-card-title">Tips and Tricks for Inclusive Social Media</h2>
-						<img src="./assets/images/ssc3.png" alt="" class="ss-card-image">
-					</a>
-				</container>
-			</section>
-		</main>
-	</div>
-
-	<footer id="footer">
-		<container id="top-footer">
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Resources</p>
-				<a href="#">Blog</a>
-				<a href="#">Library</a>
-				<a href="#">Release Notes</a>
-				<a href="#">Slack Community</a>
-			</div>
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Help</p>
-				<a href="#">My Account</a>
-				<a href="#">Support Docs</a>
-				<a href="#">Contact Us</a>
-				<a href="#">Feature Requests</a>
-			</div>
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Company</p>
-				<a href="#">Stark Framework</a>
-				<a href="#">Privacy Policy</a>
-				<a href="#">Terms of Service</a>
-				<a href="#">Code of Conduct</a>
-			</div>
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Security</p>
-				<a href="#">Security Overview</a>
-				<a href="#">Cookie Policy</a>
-				<a href="#">GDPR</a>
-				<a href="#">Status</a>
-			</div>
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Design Integragtions</p>
-				<a href="#">Stark for Figma</a>
-				<a href="#">Stark for FigJam</a>
-				<a href="#">Stark for Sketch</a>
-				<a href="#">Stark for Adobe XD</a>
-			</div>
-			<div class="tf-divs">
-				<p class="tf-divs-heading">Developer Integrations</p>
-				<a href="#">Stark for Chrome</a>
-				<a href="#">Stark for Firefox</a>
-				<a href="#">Stark for Edge</a>
-				<a href="#">Stark for Safari</a>
-				<a href="#">Stark for Arc</a>
-				<a href="#">Stark for Brave</a>
-			</div>
-		</container>
-
-		<container id="bottom-footer">
-			<div id="bf-logos-container">
-				<a href="#" class="bf-logos"><img src="./assets/images/logo/twitter.png" alt=""></a>
-				<a href="#" class="bf-logos"><img src="./assets/images/logo/instagram.png" alt=""></a>
-				<a href="#" class="bf-logos"><img src="./assets/images/logo/slack.png" alt=""></a>
-				<a href="#" class="bf-logos"><img src="./assets/images/logo/linkedin.webp" alt=""></a>
-				<a href="#" class="bf-logos"><img src="./assets/images/logo/youtube.png" alt=""></a>
-			</div>
-			<p id="copyright">MADE REMOTELY WITH LOVE BY STARK LAB, INC. COPYRIGHT 2023</p>
-		</container>
-	</footer>
+    <header>
+        <navbar id="navbar">
+            <div class="flex items-center gap-x-6">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="inherit" xmlns="http://www.w3.org/2000/svg" aria-label="Home" id="navbar-logo">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z" fill="inherit"></path>
+                </svg>
+                <div class="hidden md+:flex justify-between gap-x-6">
+                    <a href="#" class="navbar-links">
+                        Product
+                        <ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
+                    </a>
+                    <a href="#" class="navbar-links">Pricing</a>
+                    <a href="#" class="navbar-links">Support</a>
+                    <a href="#" class="navbar-links">
+                        Resources
+                        <ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-7">
+                <a href="#" class="navbar-links">Log in</a>
+                <button id="navbar-button">START FREE TRIAL</button>
+                <ion-icon name="menu" id="navbar-menu-icon"></ion-icon>
+            </div>
+        </navbar>
+        <div id="products-on-hover">
+            <a href="#" class="ugh">Stark Web App</a>
+            <a href="#" class="ugh">Stark for Adobe XD</a>
+            <a href="#" class="ugh">Stark for Safari</a>
+            <a href="#" class="ugh">Stark for Figma</a>
+            <a href="#" class="ugh">Stark for Chrome</a>
+            <a href="#" class="ugh">Stark for Arc</a>
+            <a href="#" class="ugh">Stark for FigJam</a>
+            <a href="#" class="ugh">Stark for Firefox</a>
+            <a href="#" class="ugh">Stark for Brave</a>
+            <a href="#" class="ugh">Stark for Sketch</a>
+            <a href="#" class="ugh">Stark for Edge</a>
+        </div>
+        <div id="resources-on-hover">
+            <a href="#" class="ughh">
+            	<img src="assets/images/2023 review.webp">
+                <h4>The 2023 Accessibility Year in Review</h4>
+                <a href="#">Read more on the blog</a>
+            </a>
+            <a href="#" class="ughh">
+                <h4>Blog</h4>
+                <p>Read about the latest updates to Stark and articles from our team.</p>
+            </a>
+            <a href="#" class="ughh">
+                <h4>
+                    Support Center
+                </h4>
+                <p>
+                    Find answers to your questions plus tips and tricks on how to use Stark.
+                </p>
+            </a>
+            <a href="#" class="ughh">
+                <h4>
+                    Library
+                </h4>
+                <p>Learn about all things accessibility and inclusive design.
+                </p>
+            </a>
+            <a href="#" class="ughh">
+                <h4>
+                    Community
+                </h4>
+                <p>
+                    Join more than 3,500 accessibility folks from around the world.</p>
+            </a>
+        </div>
+        <section id="below-navbar">
+            <!-- <label for="#header-search"></label> -->
+            <a href="#" class="text-blue">Library</a>
+            <a href="#" class="mr-[-40px]">Collections</a>
+            <a href="#" class="flex items-center" id="categories">
+                Categories
+                <ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
+                <ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
+            </a>
+            <div class="search-container">
+                <input type="search" name="header-search" class="search">
+                <ion-icon name="search" id="heaeder-search-icon" class="search-icon"></ion-icon>
+                <!-- configure it in javascript to show hover-blue when the input is in focus -->
+            </div>
+        </section>
+        <div class="categories--extension" id="header-categories--extension">
+            <a href="#">All</a>
+            <a href="#">Blogs & Articles</a>
+            <a href="#">Books</a>
+            <a href="#">Checklists</a>
+            <a href="#">Colors</a>
+            <a href="#">Community</a>
+            <a href="#">Companies & Organizations</a>
+            <a href="#">Course & Certificates</a>
+            <a href="#">Design Patterns</a>
+            <a href="#">Design Systems</a>
+            <a href="#">Emails</a>
+            <a href="#">Employment</a>
+            <a href="#">Gaming</a>
+            <a href="#">Guides</a>
+            <a href="#">Media</a>
+            <a href="#">Mobile</a>
+            <a href="#">Newsletters</a>
+            <a href="#">Plugins</a>
+            <a href="#">Podcasts & VIdeos</a>
+            <a href="#">Resources</a>
+            <a href="#">Software & Tools</a>
+            <a href="#">Web Standards</a>
+        </div>
+    </header>
+    <div id="content-container">
+        <aside id="aside">
+            <div class="search-container">
+                <label for="aside-search" class="text-gray-500 font-[ArminGroteskRegular] tracking-wide">Search Library</label>
+                <input type="search" name="aside-search" id="aside-search" class="search">
+                <ion-icon name="search" id="aside-search-icon" class="search-icon"></ion-icon>
+                <!-- configure it in javascript to show hover-blue when the input is in focus -->
+            </div>
+            <a href="#" class="text-blue">Home</a>
+            <a href="#" class="">Collections</a>
+            <a href="#" class="flex items-center justify-between" id="categories">
+                Categories
+                <ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
+                <ion-icon name="chevron-up" class="up-icon" class="pl-5"></ion-icon>
+            </a>
+            <div class="categories--extension" id="aside-categories--extension">
+                <a href="#">All</a>
+                <a href="#">Blogs & Articles</a>
+                <a href="#">Books</a>
+                <a href="#">Checklists</a>
+                <a href="#">Colors</a>
+                <a href="#">Community</a>
+                <a href="#">Companies & Organizations</a>
+                <a href="#">Course & Certificates</a>
+                <a href="#">Design Patterns</a>
+                <a href="#">Design Systems</a>
+                <a href="#">Emails</a>
+                <a href="#">Employment</a>
+                <a href="#">Gaming</a>
+                <a href="#">Guides</a>
+                <a href="#">Media</a>
+                <a href="#">Mobile</a>
+                <a href="#">Newsletters</a>
+                <a href="#">Plugins</a>
+                <a href="#">Podcasts & VIdeos</a>
+                <a href="#">Resources</a>
+                <a href="#">Software & Tools</a>
+                <a href="#">Web Standards</a>
+            </div>
+            <div id="contribute">
+                <h2 id="contribute-heading">Contribute to Stark</h2>
+                <h3 id="contribute-subheading">Got any accessibility resources or news?</h3>
+                <a href="#" id="contribute-button">Submit a Resource</a>
+            </div>
+        </aside>
+        <main id="main">
+            <section id="first-section">
+                <div class="section-header">
+                    <div class="flex items-center justify-between">
+                        <h2 class="section-header-heading">New in the Library</h2>
+                        <a href="#" class="section-header-view">View all</a>
+                    </div>
+                    <h3 class="section-header-subheading">Newly added accessibility resources, guides, and more.</h3>
+                </div>
+                <container id="fs-cards-container">
+                    <a class="fs-cards" id="fs-card-1" href="#">
+                        <img src="./assets/images/logo/h-logo.jpg" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Resources</p>
+                        <h2 class="fs-card-title">Making Accessible Books</h2>
+                    </a>
+                    <a href="#" class="fs-cards" id="fs-card-2">
+                        <img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Resources</p>
+                        <h2 class="fs-card-title">Inclusive Publishing</h2>
+                    </a>
+                    <a href="#" class="fs-cards" id="fs-card-3">
+                        <img src="./assets/images/logo/APLN.png" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Resources</p>
+                        <h2 class="fs-card-title">The APLN (Accessible Publishing Learning Network)</h2>
+                    </a>
+                    <a href="#" class="fs-cards" id="fs-card-4">
+                        <img src="./assets/images/logo/daisy.jpg" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Resources</p>
+                        <h2 class="fs-card-title">The DAISY Consortium’s Accessible Publishing Knowledge Base</h2>
+                    </a>
+                    <a href="#" class="fs-cards" id="fs-card-5">
+                        <img src="./assets/images/logo/language_please.png" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Resources</p>
+                        <h2 class="fs-card-title">Language, Please: Style Guide & Resources for journalists and storytellers
+                        </h2>
+                    </a>
+                    <a href="#" class="fs-cards" id="fs-card-6">
+                        <img src="./assets/images/logo/google.png" alt="" class="fs-card-image">
+                        <p class="fs-card-type">Blogs & Articles</p>
+                        <h2 class="fs-card-title">4 steps to more inclusive, precise language</h2>
+                    </a>
+                </container>
+            </section>
+            <section id="second-section">
+                <div class="section-header">
+                    <div class="flex items-center justify-between">
+                        <h2 class="section-header-heading my-2">Featured Collections</h2>
+                        <a href="#" class="section-header-view">View all</a>
+                    </div>
+                    <h3 class="section-header-subheading mb-8">Handpicked and curated collections around accessibility.</h3>
+                </div>
+                <container id="ss-cards-container">
+                    <a href="#" class="ss-cards bg-yellow-white" id="ss-card-1">
+                        <h2 class="ss-card-title">Disability Employment</h2>
+                        <img src="./assets/images/ssc1.png" alt="" class="ss-card-image">
+                    </a>
+                    <a href="#" class="ss-cards bg-light-purple" id="ss-card-2">
+                        <h2 class="ss-card-title">Making Accesible Color Combos</h2>
+                        <img src="./assets/images/ssc2.png" alt="" class="ss-card-image">
+                    </a>
+                    <a href="#" class="ss-cards bg-yellow-white" id="ss-card-3">
+                        <h2 class="ss-card-title">Tips and Tricks for Inclusive Social Media</h2>
+                        <img src="./assets/images/ssc3.png" alt="" class="ss-card-image">
+                    </a>
+                </container>
+            </section>
+        </main>
+    </div>
+    <footer id="footer">
+        <container id="top-footer">
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Resources</p>
+                <a href="#">Blog</a>
+                <a href="#">Library</a>
+                <a href="#">Release Notes</a>
+                <a href="#">Slack Community</a>
+            </div>
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Help</p>
+                <a href="#">My Account</a>
+                <a href="#">Support Docs</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Feature Requests</a>
+            </div>
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Company</p>
+                <a href="#">Stark Framework</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Code of Conduct</a>
+            </div>
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Security</p>
+                <a href="#">Security Overview</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">GDPR</a>
+                <a href="#">Status</a>
+            </div>
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Design Integragtions</p>
+                <a href="#">Stark for Figma</a>
+                <a href="#">Stark for FigJam</a>
+                <a href="#">Stark for Sketch</a>
+                <a href="#">Stark for Adobe XD</a>
+            </div>
+            <div class="tf-divs">
+                <p class="tf-divs-heading">Developer Integrations</p>
+                <a href="#">Stark for Chrome</a>
+                <a href="#">Stark for Firefox</a>
+                <a href="#">Stark for Edge</a>
+                <a href="#">Stark for Safari</a>
+                <a href="#">Stark for Arc</a>
+                <a href="#">Stark for Brave</a>
+            </div>
+        </container>
+        <container id="bottom-footer">
+            <div id="bf-logos-container">
+                <a href="#" class="bf-logos"><img src="./assets/images/logo/twitter.png" alt=""></a>
+                <a href="#" class="bf-logos"><img src="./assets/images/logo/instagram.png" alt=""></a>
+                <a href="#" class="bf-logos"><img src="./assets/images/logo/slack.png" alt=""></a>
+                <a href="#" class="bf-logos"><img src="./assets/images/logo/linkedin.webp" alt=""></a>
+                <a href="#" class="bf-logos"><img src="./assets/images/logo/youtube.png" alt=""></a>
+            </div>
+            <p id="copyright">MADE REMOTELY WITH LOVE BY STARK LAB, INC. COPYRIGHT 2023</p>
+        </container>
+    </footer>
 </body>
 
 </html>

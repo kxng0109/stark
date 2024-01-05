@@ -55,8 +55,12 @@ header>section, header>div{
 	@apply text-2xl text-blue md+:hidden;
 }
 
-#products-on-hover{
-	@apply hidden /*md+:grid*/ grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-10 bg-white p-4 shadow-md
+#products-on-hover, #resources-on-hover{
+	@apply hidden /*md+:grid*/ grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-2 bg-white p-4 shadow-md
+}
+
+#resources-on-hover{
+	@apply md+:grid;
 }
 
 .ugh{
@@ -182,7 +186,7 @@ header>section, header>div{
 }
 
 .fs-card-title, .ss-card-title, #contribute-heading{
-	@apply text-2xl font-[ArminGroteskBlack] z-10 relative overflow-hidden text-ellipsis max-h-[95px];
+	@apply text-2xl font-[ArminGroteskBlack] z-1 relative overflow-hidden text-ellipsis max-h-[95px];
 }
 
 
