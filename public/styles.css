@@ -596,8 +596,21 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .row-span-3 {
@@ -623,6 +636,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .h-\[96px\] {
@@ -768,25 +785,29 @@ video {
   font-weight: 700;
 }
 
-header>section, header>div {
+header {
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
 #navbar {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  max-width: 1010px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   --tw-bg-opacity: 1;
   background-color: rgb(246 246 235 / var(--tw-bg-opacity));
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 1024px) {
   #navbar {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
@@ -897,8 +918,10 @@ header>section, header>div {
 
 @media (min-width: 1024px) {
   #products-on-hover, #resources-on-hover {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+    left: unset;
+    right: unset;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
