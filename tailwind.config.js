@@ -19,7 +19,8 @@ module.exports = {
         'xs' : '460px',
         'md' : '841px',
         'md+': '850px',
-        'md++': '980px'
+        'md++': '980px',
+        'xl' : '1201px'
       },
       zIndex:{
         '1' : '1',

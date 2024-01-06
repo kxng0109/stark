@@ -36,7 +36,7 @@ header{
 }
 
 #navbar {
-	@apply py-4 flex flex-row justify-between items-center  bg-yellow-white mx-auto max-w-[1010px] lg:px-2;
+	@apply py-4 flex flex-row justify-between items-center  bg-yellow-white mx-auto max-w-[960px];
 }
 
 #navbar-logo {
@@ -55,8 +55,11 @@ header{
 	@apply text-2xl text-blue md+:hidden;
 }
 
+
+
+/*Work on this abeg!!!!*/
 #products-on-hover, #resources-on-hover{
-	@apply hidden md+:grid grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-2 bg-white p-4 shadow-md md++:mx-1 lg:mx-auto lg:inset-x-[unset];
+	@apply hidden /*md+:grid*/ grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-2 bg-white p-4 shadow-md md++:mx-1 lg:mx-auto lg:inset-x-[unset];
 }
 
 #resources-on-hover{
@@ -117,7 +120,7 @@ header{
 
 
 #content-container{
-	@apply px-4 gap-x-16 md:flex md:px-6 md:mt-16;
+	@apply px-4 gap-x-16 md:flex md:px-6 md:mt-16 max-w-[1200px] mx-auto xl:px-0;
 }
 
 #aside{
@@ -159,9 +162,9 @@ header{
 
 
 
-/*#main{
-	@apply w-auto
-}*/
+#main{
+	@apply w-[calc(100%_-_17rem)]
+}
 
 #first-section{
 	@apply py-8 md:pt-0;
@@ -182,7 +185,7 @@ header{
 
 #fs-cards-container{
 	grid-template-rows: repeat(6, 218px);
-	@apply grid gap-y-8 xs:grid-rows-[repeat(6,_190px)] /*md:grid-cols-[repeat(auto-fill,_260px)]*/ md:auto-rows-[235px] md:grid-rows-none md:grid-cols-[260px];
+	@apply grid gap-8 xs:grid-rows-[repeat(6,_190px)] /*md:grid-cols-[repeat(auto-fill,_260px)]*/ md:auto-rows-[235px] md:grid-rows-none md:grid-cols-[260px] xl:grid-cols-[repeat(auto-fill,_260px)];
 }
 
 .fs-cards{
@@ -204,7 +207,7 @@ header{
 
 
 #ss-cards-container{
-	@apply grid gap-y-8 grid-cols-[repeat(auto-fill,_269px)] gap-x-8;
+	@apply grid gap-8 grid-cols-[repeat(1,_260px)] xl:grid-cols-[repeat(auto-fill,_260px)];
 }
 
 .ss-cards{
@@ -222,7 +225,7 @@ header{
 }
 
 #top-footer{
-	@apply grid grid-cols-[repeat(auto-fill,_minmax(146px,_1fr))] justify-between gap-10 pt-20 pb-12 md:gap-9 md+:grid-cols-4 lg:gap-14;
+	@apply grid grid-cols-[repeat(auto-fill,_minmax(146px,_1fr))] justify-between gap-10 pt-20 pb-12 md:gap-9 md+:grid-cols-4 lg:gap-14 max-w-[1100px] mx-auto;
 }
 
 .tf-divs{
@@ -243,7 +246,7 @@ header{
 
 
 #bottom-footer{
-	@apply flex justify-between py-20 flex-wrap xs:pt-9;
+	@apply flex justify-between py-20 flex-wrap xs:pt-9 max-w-[1100px] mx-auto;
 }
 
 @media screen and (min-width: 913px){
