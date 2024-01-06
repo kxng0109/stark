@@ -1141,8 +1141,10 @@ header {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-#main {
-  width: calc(100% - 17rem);
+@media (min-width: 841px) {
+  #main {
+    width: calc(100% - 17rem);
+  }
 }
 
 #first-section {

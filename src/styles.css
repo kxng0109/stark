@@ -163,7 +163,7 @@ header{
 
 
 #main{
-	@apply w-[calc(100%_-_17rem)]
+	@apply md:w-[calc(100%_-_17rem)]
 }
 
 #first-section{
