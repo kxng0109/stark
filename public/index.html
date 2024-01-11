@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script type="text/javascript" src="./index.js" defer></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
     <title>Library: Accessibility resources, guides, communities, and more</title>
@@ -18,19 +19,21 @@
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="inherit" xmlns="http://www.w3.org/2000/svg" aria-label="Home" id="navbar-logo">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z" fill="inherit"></path>
                 </svg>
+
                 <div class="hidden md+:flex justify-between gap-x-6">
-                    <a href="#" class="navbar-links">
+                    <a href="#" class="navbar-links beHovered">
                         Product
                         <ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
                     </a>
                     <a href="#" class="navbar-links">Pricing</a>
                     <a href="#" class="navbar-links">Support</a>
-                    <a href="#" class="navbar-links">
+                    <a href="#" class="navbar-links beHovered">
                         Resources
                         <ion-icon name="caret-down" class="text-xs text-blue"></ion-icon>
                     </a>
                 </div>
             </div>
+
             <div class="flex items-center gap-x-7">
                 <a href="#" class="navbar-links">Log in</a>
                 <button id="navbar-button">START FREE TRIAL</button>
@@ -38,7 +41,7 @@
             </div>
         </navbar>
 
-        <div id="products-on-hover">
+        <div id="products-on-hover" class="element-on-hover">
             <a href="#" class="ugh">Stark Web App</a>
             <a href="#" class="ugh">Stark for Adobe XD</a>
             <a href="#" class="ugh">Stark for Safari</a>
@@ -52,7 +55,7 @@
             <a href="#" class="ugh">Stark for Edge</a>
         </div>
 
-        <div id="resources-on-hover">
+        <div id="resources-on-hover" class="element-on-hover">
             <a href="#" class="row-span-3 overflow-hidden relative flex flex-col rounded-md">
                 <img src="assets/images/2023 review.webp" class="h-[96px] object-cover relative">
                 <div class="bg-[#f3e8ff] p-3">
@@ -91,20 +94,21 @@
 
         <section id="below-navbar">
             <!-- <label for="#header-search"></label> -->
-            <a href="#" class="text-blue">Library</a>
+            <a href="#" class="!text-blue">Library</a>
             <a href="#" class="mr-[-40px]">Collections</a>
-            <a href="#" class="flex items-center" id="categories">
+            <a class="categories flex items-center cursor-pointer select-none" id="categories">
                 Categories
-                <ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
-                <ion-icon name="chevron-up" class="up-icon" class="pl-5 hidden"></ion-icon>
+                <ion-icon name="chevron-down" class="down-icon pl-5"></ion-icon>
+                <ion-icon name="chevron-up" class="up-icon pl-5 hidden"></ion-icon>
             </a>
-            <div class="search-container">
+            <div class="search-container group">
                 <input type="search" name="header-search" class="search">
-                <ion-icon name="search" id="heaeder-search-icon" class="search-icon"></ion-icon>
+                <ion-icon name="search" id="header-search-icon" class="search-icon"></ion-icon>
                 <!-- configure it in javascript to show hover-blue when the input is in focus -->
             </div>
         </section>
-        <div class="categories--extension" id="header-categories--extension">
+
+        <div class="categories--extension !hidden" id="header-categories--extension">
             <a href="#">All</a>
             <a href="#">Blogs & Articles</a>
             <a href="#">Books</a>
@@ -135,7 +139,7 @@
 
     <div id="content-container">
         <aside id="aside">
-            <div class="search-container">
+            <div class="search-container group">
                 <label for="aside-search" class="text-gray-500 font-[ArminGroteskRegular] tracking-wide">Search Library</label>
                 <input type="search" name="aside-search" id="aside-search" class="search">
                 <ion-icon name="search" id="aside-search-icon" class="search-icon"></ion-icon>
@@ -143,12 +147,12 @@
             </div>
             <a href="#" class="text-blue">Home</a>
             <a href="#" class="">Collections</a>
-            <a href="#" class="flex items-center justify-between" id="categories">
+            <a href="#" class="categories flex items-center justify-between" id="categories">
                 Categories
-                <ion-icon name="chevron-down" class="down-icon" class="pl-5"></ion-icon>
-                <ion-icon name="chevron-up" class="up-icon" class="pl-5"></ion-icon>
+                <ion-icon name="chevron-down" class="down-icon pl-5 "></ion-icon>
+                <ion-icon name="chevron-up" class="up-icon pl-5 hidden"></ion-icon>
             </a>
-            <div class="categories--extension" id="aside-categories--extension">
+            <div class="categories--extension !hidden" id="aside-categories--extension">
                 <a href="#">All</a>
                 <a href="#">Blogs & Articles</a>
                 <a href="#">Books</a>
