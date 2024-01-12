@@ -6,7 +6,7 @@ let downArrow = document.querySelectorAll('.down-icon') as NodeListOf<SVGElement
 let upArrow = document.querySelectorAll('.up-icon') as NodeListOf<SVGElement>;
 let elementOnHover = document.querySelectorAll('.element-on-hover') as NodeListOf<HTMLDivElement>;
 let beHovered = document.querySelectorAll('.beHovered') as NodeListOf<HTMLAnchorElement>;
-
+let ssCards = document.querySelectorAll('.ss-cards') as NodeListOf<HTMLDivElement>;
 
 let showDivOnElementHover = (hoveredElement:HTMLElement, showElement: HTMLDivElement) => {
 	//Need to make it such that when the mouse leaves the hovered element and the element shown on hover, it'll make make the element shown on hover to disappear. Right now, it only does it for one, not for both
@@ -37,3 +37,11 @@ categoriesButton.forEach(button => {
 beHovered.forEach((item, index) =>{
 	showDivOnElementHover(beHovered[index], elementOnHover[index])
 })
+
+// ssCards.forEach(card =>{
+// 	card.onmousemove = (e) =>{
+// 		let x = `${e.clientX/360} ${e.clientX/e.clientY}deg`;
+// 		console.log(x)
+// 		card.style.rotate = x;
+// 	}
+// })

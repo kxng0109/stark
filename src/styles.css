@@ -226,7 +226,8 @@ aside>a {
 }
 
 .ss-cards {
-	@apply relative w-[260px] h-[350px] p-9 rounded-md;
+/*	perspective: 650px;*/
+	@apply relative w-[260px] h-[350px] p-9 rounded-md hover:scale-[1.02] hover:border hover:border-gray-200 transition-transform;
 }
 
 .ss-card-image {
