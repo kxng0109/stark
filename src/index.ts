@@ -9,17 +9,23 @@ let beHovered = document.querySelectorAll('.beHovered') as NodeListOf<HTMLAnchor
 let ssCards = document.querySelectorAll('.ss-cards') as NodeListOf<HTMLDivElement>;
 
 let showDivOnElementHover = (hoveredElement:HTMLElement, showElement: HTMLDivElement) => {
-	//Need to make it such that when the mouse leaves the hovered element and the element shown on hover, it'll make make the element shown on hover to disappear. Right now, it only does it for one, not for both
+	let mouseEntered = false;
+
 	hoveredElement.onmouseover = () =>{
-		showElement.classList.add('!grid')
+		showElement.classList.add('!grid');
+		setTimeout(() => showElement.classList.add('!opacity-100'), 200);
 	}
 
-	// hoveredElement.onmouseleave = () =>{
-	// 	showElement.classList.remove('!grid')
-	// }
+	showElement.onmouseenter = () => mouseEntered = true;
+
+	hoveredElement.onmouseleave = () =>{
+		setTimeout(() => {!mouseEntered ? (showElement.classList.remove('!opacity-100'),	setTimeout(() => showElement.classList.remove('!grid'), 300)) : null}, 300)
+	}
 
 	showElement.onmouseleave = () =>{
-		showElement.classList.remove('!grid')
+		showElement.classList.remove('!opacity-100');
+		setTimeout(() => showElement.classList.remove('!grid'), 300);
+		return mouseEntered = false;
 	}
 }
 

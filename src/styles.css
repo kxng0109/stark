@@ -5,9 +5,7 @@
 *,
 *:after,
 *:before {
-	@apply box-border p-0 m-0 font-[ArminGroteskRegular] text-dark-blue transition-colors
-	/*outline outline-red-500*/
-	;
+	@apply box-border p-0 m-0 font-[ArminGroteskRegular] text-dark-blue transition-colors	;
 }
 
 @font-face {
@@ -61,12 +59,9 @@ header {
 
 
 
-/*Work on this abeg!!!!*/
 #products-on-hover,
 #resources-on-hover {
-	@apply hidden
-	/*md+:grid*/
-	grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-2 bg-white p-4 shadow-md md++:mx-1 lg:mx-auto lg:inset-x-[unset];
+	@apply hidden opacity-0 transition-opacity grid-rows-4 grid-cols-3 rounded-md gap-5 absolute inset-x-1 mx-auto w-[785px] top-14 z-2 bg-white p-4 shadow-md md++:mx-1 lg:right-[unset] lg:left-[calc((100vw_-980px)/2)];
 }
 
 #resources-on-hover {
@@ -109,9 +104,7 @@ aside>a {
 }
 
 .search {
-	@apply pl-10 outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[56.8vw]
-	/*w-[13.5rem]*/
-	;
+	@apply pl-10 outline outline-2 outline-gray-400 focus:outline-lighter-hover-blue py-3 rounded-md w-[56.8vw];
 }
 
 .search-icon {
@@ -196,9 +189,7 @@ aside>a {
 
 #fs-cards-container {
 	grid-template-rows: repeat(6, 218px);
-	@apply grid gap-8 xs:grid-rows-[repeat(6,_190px)]
-	/*md:grid-cols-[repeat(auto-fill,_260px)]*/
-	md:auto-rows-[235px] md:grid-rows-none md:grid-cols-[260px] xl:grid-cols-[repeat(auto-fill,_260px)];
+	@apply grid gap-8 xs:grid-rows-[repeat(6,_190px)]	 md:auto-rows-[235px] md:grid-rows-none md:grid-cols-[260px] xl:grid-cols-[repeat(auto-fill,_260px)];
 }
 
 .fs-cards {
